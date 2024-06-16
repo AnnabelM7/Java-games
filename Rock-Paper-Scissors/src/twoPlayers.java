@@ -30,12 +30,12 @@ public class twoPlayers {
     private static String getPlayerMove(Scanner sc, int playerNumber) {
         String move;
         while (true) {
-            System.out.print("Player " + playerNumber + ", enter your move (Rock, Paper, or Scissors): ");
+            System.out.print("Player " + playerNumber + ", enter your move (Rock, Paper or Scissors): ");
             move = sc.nextLine().trim().toLowerCase();
             if (isValidMove(move)) {
                 break;
             } else {
-                System.out.println("Invalid input. Please enter Rock, Paper, or Scissors.");
+                System.out.println("Invalid input. Please enter Rock, Paper or Scissors.");
             }
         }
         return move;
